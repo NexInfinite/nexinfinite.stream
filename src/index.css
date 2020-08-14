@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+    background-color: #121212;
+}
+
+#particles canvas{
+    position: absolute;
+    right: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+h2 {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    display: block;
+    text-align: center;
+    width: 40%;
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+@media only screen 
+and (max-width : 500px) {
+    h2 {
+        color: white;
+        font-family: 'Inconsolata', monospace;
+        display: block;
+        text-align: center;
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+#logo {
+    width: 10%;
+    height: 10%;
+    position: relative;
+    display: block;
+    max-width: 50%;
+    margin: 0 auto;
+    min-width: 200px;
+    min-height: 200px;
+    animation: logo-animation 6s;
+}
+
+#github {
+    animation: icon-animation 6s;
+}
+
+#twitch {
+    animation: icon-animation 6s;
+    animation-delay: 0.5s; 
+}
+
+#paypal {
+    animation: icon-animation 6s;
+    animation-delay: 1s; 
+}
+
+#youtube {
+    animation: icon-animation 6s;
+    animation-delay: 1.5s;
+}
+
+#iconTableTd {
+    padding: 15px;
+}
+
+
+@keyframes logo-animation {
+    0% {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 30%;
+        height: 30%;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    20% {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        width: 30%;
+        height: 30%;
+        min-width: 300px;
+        min-height: 300px;
+    }
+    70% {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0%;
+        width: 10%;
+        height: 10%;
+        min-width: 200px;
+        min-height: 200px;
+    }
+}
+
+@keyframes icon-animation {
+    0% {
+        opacity: 0%;
+    }
+
+    80% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
